@@ -21,19 +21,22 @@ lib_summary <- function(sizes = FALSE) {
   # summarize library paths
   pkg_tbl <- table(pkgs[, "LibPath"])
   pkg_df <- as.data.frame(pkg_tbl, stringsAsFactors = FALSE)
-  #like (sizes == TRUE) or isTRUE(sizes) but since we did check above not critical
   names(pkg_df) <- c("Library", "n_packages")
+  #like (sizes == TRUE) or isTRUE(sizes) but since we did check above not critical
   if (isTRUE(sizes)) {
-    pkg_df$lib_size <- vapply(
-      pkg_df$Library,
-      function(x) {
-        sum(fs::file_size(fs::dir_ls(x, recurse = TRUE)))
-      },
-      FUN.VALUE = numeric(1) #specifies just one number for each result
-    )
+    pkg_df <- calculate_sizes(pkg_df)
   }
-  # NA == TRUE is NA
-  # last line is returned from function
   pkg_df
 }
+#type-safe objects
 
+calculate_sizes <- function(df) {
+  df$lib_size <- map_dbl(
+    df$Library,
+    ~ sum(fs::file_size(fs::dir_ls(.x, recurse = TRUE))),
+    FUN.VALUE = numeric(1) #specifies just one number for each result
+  )
+  df
+}
+# NA == TRUE is NA
+# last line is returned from function

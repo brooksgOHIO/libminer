@@ -12,6 +12,7 @@ Procides functions for learning about your R libraries and the packages they con
 Useful links:
 \itemize{
   \item \url{https://github.com/brooksgOHIO/libminer}
+  \item \url{https://brooksgohio.github.io/libminer/}
   \item Report bugs at \url{https://github.com/brooksgOHIO/libminer/issues}
 }
 
