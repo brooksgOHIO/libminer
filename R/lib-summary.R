@@ -1,3 +1,14 @@
+#' R Library Summary
+#'
+#'Provides a brief summary of the package libraries on
+#'your machine.
+#'
+#' @return A `data.frame` containing the count of packages in each
+#'   of the user's libraries.
+#' @export
+#'
+#' @examples
+#' lib_summary()
 lib_summary <- function() {
   pkgs <- utils::installed.packages()
   # one column is libPath
@@ -8,4 +19,3 @@ lib_summary <- function() {
   # last line is returned from function
   pkg_df
 }
-
