@@ -30,7 +30,7 @@ lib_summary <- function(sizes = FALSE) {
 }
 #type-safe objects
 
-#' Title
+#' calculate_sizes
 #'
 #' @param df a data frame of libraries
 #' @noRd
