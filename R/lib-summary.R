@@ -30,6 +30,13 @@ lib_summary <- function(sizes = FALSE) {
 }
 #type-safe objects
 
+#' Title
+#'
+#' @param df a data frame of libraries
+#' @noRd
+#'
+#' @return a dataframe with a lib_size column
+#'
 calculate_sizes <- function(df) {
   df$lib_size <- map_dbl(
     df$Library,
