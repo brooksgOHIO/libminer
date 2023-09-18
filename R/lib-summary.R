@@ -27,3 +27,5 @@ lib_summary <- function() {
 # license.md has actual MIT license in it
 # CRAN requires LICENSE only
 # .md gets added to .Rbuildignore
+
+# check()
