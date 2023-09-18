@@ -4,6 +4,8 @@
 # libminer
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/brooksgOHIO/libminer/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/brooksgOHIO/libminer/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of libminer is to … provide an overview of your R library
@@ -35,7 +37,7 @@ lib_summary()
 #>                                                                   Library
 #> 1                                      C:/Program Files/R/R-4.3.1/library
 #> 2                        C:/Users/brooksg/AppData/Local/R/win-library/4.3
-#> 3 C:/Users/brooksg/AppData/Local/Temp/RtmpEJyDi3/temp_libpath1eb01704641d
+#> 3 C:/Users/brooksg/AppData/Local/Temp/RtmpeKKGOV/temp_libpath212c474b2841
 #>   n_packages
 #> 1         30
 #> 2        408
@@ -46,11 +48,11 @@ lib_summary(sizes = TRUE)
 #>                                                                   Library
 #> 1                                      C:/Program Files/R/R-4.3.1/library
 #> 2                        C:/Users/brooksg/AppData/Local/R/win-library/4.3
-#> 3 C:/Users/brooksg/AppData/Local/Temp/RtmpEJyDi3/temp_libpath1eb01704641d
+#> 3 C:/Users/brooksg/AppData/Local/Temp/RtmpeKKGOV/temp_libpath212c474b2841
 #>   n_packages  lib_size
 #> 1         30  68858812
 #> 2        408 847417234
-#> 3          1     13529
+#> 3          1     17274
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`?
