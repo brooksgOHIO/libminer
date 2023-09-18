@@ -29,3 +29,17 @@ lib_summary <- function() {
 # .md gets added to .Rbuildignore
 
 # check()
+# ctrl+shift+E
+# cph is copyright holder
+
+# put code on github
+# use_github()
+# git_sitrep() to be sure it is right
+# need user section
+# need Personal Access Token <discovered>
+#
+# to set PAT
+# create_github_token() follow instructions
+# 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 paste PAT
+# git_sitrep() to verify
+# use_github() push content to new repository on github
